@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Metadat goes in head-->        
+        <title>Register</title>
+
+    </head>
+
+    <body>
+    <!-- Content goes in body-->
+
+    <h1>Register</h1>
+    
+    <form>
+        <label for="firstname">Firstname : </label>
+        <input name="Firstname" id="firstname" type="text" required>
+
+        <label for="lastname">Lastname : </label>
+        <input name="Lastname" id="lastname" type="text" required>
+
+        <br><br>
+
+        <label for="male">Male </label>
+        <input name="Gender" id="male" type="radio" value="male">
+        <label for="female">Female </label>
+        <input name="Gender" id="female" type="radio" value="female">
+        <label for="other">Other </label>
+        <input name="Gender" id="other" type="radio" value="other">
+
+        <br><br>
+
+        <label for="email">Email : </label>
+        <input name="Email" id="email" type="email" required>
+
+        <label for="password">Password : </label>
+        <input name="Password" id="password" type="password" 
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+
+        <br><br>
+
+        <label for="dob">Birthday : </label>
+        <select id="dob" name="Day">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+        </select>
+        <select id="dob" name="Month">
+            <option value="jan">January</option>
+            <option value="feb">February</option>
+            <option value="march">March</option>
+        </select>
+        <select id="dob" name="Year">
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+        </select>
+
+        <br><br>
+
+        <label for="check">I agree to terms and conditions : </label>
+        <input id="check" type="checkbox">
+
+        <br><br>
+        <button>Sign Up</button>
+
+    </form>
+    
+
+    </body>
+</html>
